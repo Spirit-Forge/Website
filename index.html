@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Spirit Forge</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/packs.css">
+</head>
+<body>
+    <nav>
+        <button onclick="tabTo('welcome')">Welcome</button>
+        <button onclick="tabTo('design')">Design</button>
+        <button onclick="tabTo('build')">Build</button>
+        <button onclick="tabTo('play')">Play</button>
+        <!--
+            On first visit, display welcome page first.
+            On subsequent visits, display the tab that was last visited.
+        -->
+    </nav>
+    <main>
+        <section id="welcome" class="active">
+            <blockquote>
+                <p>In the time before time, the Great Beings unraveled the mysteries of their world, bringing forth spirits of the elements with powers beyond belief.</p>
+                <p hidden>Today, a trio of brave Toa has returned to the place of their creation, unlocking the wonders of the Spirit Forge once more…</p>
+            </blockquote>
+            <p>Everyone on the Mask of Destiny team is proud to present the <strong>Spirit Forge</strong>, an online repository of BIONICLE resources, as well as all the information you need to design and build your own custom sets.</p>
+            <p>BIONICLE may have been discontinued by LEGO, but through the endless creativity of its fans, as well as the increasing accessibility of technologies like 3D printing, the legend lives on to this day.</p>
+            <button onclick="tabTo('design')">Enter…</button>
+        </section>
+        <section id="design">
+            <p>Designing BIONICLE sets has never been easier thanks to BrickLink’s <a href="https://www.bricklink.com/v3/studio/download.page">Studio</a> program. To get started, just click “Download Studio 2.0.”</p>
+            <p>Studio comes with many BIONICLE pieces by default, as well as a few Kanohi masks — however, you’ll likely want more, which is where custom part packs come into play. Luckily, the BIONICLE community has produced several, which are compiled here.</p>
+            <div class="packs">
+                <h1>Free</h1>
+                <button class="packcard" onclick="openLink('voot')">
+                    <img src="img/voot.png">
+                    <div class="packcardtext">
+                        <h2>VootCaboot’s Studio Parts</h2>
+                        <p>Includes parts from the classic Biopack, as well as additional custom parts.</p>
+                    </div>
+                </button>
+                <button class="packcard" onclick="openLink('sido')">
+                    <img src="img/sido.jpg">
+                    <div class="packcardtext">
+                        <h2>SidoPak for Studio</h2>
+                        <p>This download contains 45 high accuracy models for Studio.</p>
+                    </div>
+                </button>
+            </div>
+            <div class="packs">
+                <h1>Paid (Dummy Cards ATM)</h1>
+                <button class="packcard" onclick="openLink('voot')">
+                    <img src="img/voot.png">
+                    <div class="packcardtext">
+                        <h2>VootCaboot’s Studio Parts</h2>
+                        <p>Includes parts from the classic Biopack, as well as additional custom parts.</p>
+                    </div>
+                </button>
+                <button class="packcard" onclick="openLink('sido')">
+                    <img src="img/sido.jpg">
+                    <div class="packcardtext">
+                        <h2>SidoPak for Studio</h2>
+                        <p>This download contains 45 high accuracy models for Studio.</p>
+                    </div>
+                </button>
+            </div>
+        </section>
+        <section id="build">
+            <h1>3D Printing Guide</h1>
+            <p>Blah blah blah.</p>
+            <p>Blah blah blah.</p>
+            <h1>Spirit Forge Sets</h1>
+            <h2>Summer 2022: The Lost Rahi</h2>
+            <h3>Sand Tarakava</h3>
+            <p>Blah blah blah.</p>
+            <h3>Fikou Nui</h3>
+            <p>Blah blah blah.</p>
+        </section>
+        <section id="play">
+            <h1>Team Kanohi Parts Pack</h1>
+            <p>Use this parts pack to, uh… @BoxTurret give me a blurb to go here.</p>
+            <video controls poster="/img/unknown.png">
+                <source src="/img/Jared.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h1><em>Legend of Mata Nui</em> Mod Tools</h1>
+            <p>Use these tools to make your own modifications to <em>BIONICLE: Legend of Mata Nui</em>.</p>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.js"
+			  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			  crossorigin="anonymous"></script>
+    <script
+			  src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"
+			  integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY="
+			  crossorigin="anonymous"></script>
+</body>
+</html>
