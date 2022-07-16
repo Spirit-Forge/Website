@@ -1,6 +1,6 @@
 :root {
     --back1: #010203;
-    /* RGB08, drop shadow */
+    /* drop shadow */
     --outershadow: 2px 2px 4px var(--back1);
     --smalloutershadow: 1px 1px 2px var(--back1);
 }
@@ -15,6 +15,35 @@
     font-family: 'Gill Sans Std';
     src: url('../../fonts/GillSansStd-Light.woff2') format('woff2'), url('../../fonts/GillSansStd-Light.woff') format('woff');
 }
+
+
+/********
+ * CHIP *
+ ********/
+
+
+#mod-logo {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+
+#mod-logo:hover {
+    filter: brightness(.75);
+}
+
+
+header {
+    margin: auto;
+    max-width: 50vw;
+}
+
+
+header img {
+    max-width: 100%;
+}
+
 
 body {
     background-color: #030b13;
@@ -48,20 +77,19 @@ nav button:hover {
     font-size: 1.125em;
 }
 
-main section {
-    display: none;
+main {
     margin: auto;
-    margin-top: 4em;
     width: 50%;
     transition: all 0.1s ease-in-out;
 }
 
-main section blockquote {
-    margin: 4em 2em;
+main blockquote p {
+    margin: 2em 2em;
     font-size: 0.875em;
-    letter-spacing: 0.25em;
+    letter-spacing: .375em;
     text-transform: uppercase;
-    color: lightgray
+    color: lightgray;
+    font-weight: bolder;
 }
 
 h1,
@@ -70,7 +98,7 @@ h3 {
     font-family: 'TradeMarker';
 }
 
-main section h1 {
+main h1 {
     font-size: 1.75em;
     letter-spacing: 0.25em;
     text-transform: uppercase;
@@ -80,7 +108,7 @@ main section h1 {
     text-align: center;
 }
 
-main section h2 {
+main h2 {
     font-size: 1.375em;
     letter-spacing: 0.25em;
     text-transform: uppercase;
@@ -90,20 +118,20 @@ main section h2 {
     text-align: center;
 }
 
-main section h3 {
+main h3 {
     font-size: 1.25em;
 }
 
-main section p {
-    font-size: 1.125em;
+main p {
+    font-size: larger;
     letter-spacing: 0.0625em;
 }
 
-main section video {
+main video {
     width: 100%;
 }
 
-main section button {
+main button {
     font-family: 'Gill Sans Std';
     margin: 1em auto;
     padding: 0.5em;
@@ -120,12 +148,12 @@ main section button {
     box-shadow: var(--outershadow);
 }
 
-main section button:hover {
+main button:hover {
     transform: scale(1.0625);
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
-main section button:active {
+main button:active {
     transform: scale(0.9875);
     background-color: rgba(255, 255, 255, 0.0625);
     box-shadow: var(--smalloutershadow);
