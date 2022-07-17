@@ -1,27 +1,32 @@
 .packcard {
-    width: 100%;
-    max-height: 120px;
+    width: calc(100% - 40px);
+    height: 100px;
     display: flex;
     flex-direction: row;
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 0em;
+    margin-left: 40px;
 }
 
 .packcard img {
-    max-width: 20%;
-    display: block;
-    width: 100%;
+    margin-left: -40px;
+    display: inline-block;
     height: auto;
     object-fit: contain;
-    border-radius: 0.5em;
+    border-radius: 50%;
 }
 
 .packcardtext {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-left: .75em;
 }
 
 .packcardtext h2,
 .packcardtext p {
+    margin: initial;
     text-align: left;
     margin-left: 0em;
 }
@@ -31,5 +36,5 @@
 }
 
 .packcardtext p {
-    font-size: 0.5em;
+    font-size: .5em;
 }

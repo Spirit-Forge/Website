@@ -19,15 +19,36 @@
         <button onclick="window.location.href='/play/'">Play</button>
     </nav>
     <main>
-        <h1>3D Printing Guide</h1>
-        <p>Blah blah blah.</p>
-        <p>Blah blah blah.</p>
-        <h1>Spirit Forge Sets</h1>
-        <h2>Summer 2022: The Lost Rahi</h2>
-        <h3>Sand Tarakava</h3>
-        <p>Blah blah blah.</p>
-        <h3>Fikou Nui</h3>
-        <p>Blah blah blah.</p>
+        <aside>
+            <p><a href="#3DGuide">3D Printing Guide</a></p>
+            <p><a href="#ResinGuide">Resin Casting Guide</a></p>
+            <p class="levelone"><a href="#ResinColorGuide">Resin Color Matching Guide</a></p>
+        </aside>
+        <article>
+            <h1 id="3DGuide">3D Printing Guide</h1>
+            <h2>Written by HahliNuva of Red Star Games</h2>
+            <p><strong>Disclaimer:</strong> The purpose of this article is only to inform and educate — the author and publishing group are not liable for any damages, harm, or other issues that may arise from the use (or misuse) of the printing and post-processing techniques that are described herein. This is also not an exhaustive list of every possible printing method – it’s a primer on some of the basics.</p>
+            <p>First, an overview of two common 3D printing methods: fused deposition modeling (FDM), as the name implies, entails a filament of material (most often plastic) being heated and extruded through a nozzle in a specific pattern in order to construct an object. The most common material used in FDM printing is PLA plastic, which is relatively inexpensive and biodegradable (note that older PLA prints may exhibit some amount of “peeling” as they age, where the plastic starts to de-fuse at the layer lines). Stereolithography (SLA), on the other hand, involves curing a specialized type of photosensitive (UV-reactive) liquid resin into a solid via a high-powered, constantly-moving UV laser or LED array. Lasers are expensive but produce very high-resolution results, whereas LED arrays are somewhat cheaper but with a more limited lifespan and some resolution constraints.</p>
+            <p>FDM prints are able to be created using a wider range of materials than SLA, and FDM printers of various scales and resolutions have become increasingly affordable in recent years. However, FDM prints tend to have visible layer lines (also known as “print lines”), especially at smaller scales such as those used for masks and other parts.</p>
+            <p>SLA almost always provides a significant resolution advantage, and the resulting prints often have few to none of the layer lines that often characterize FDM prints. Unfortunately, SLA prints can also be delicate if the model has thin areas, and depending on the resin used, may have issues with chipping.  Additionally, any SLA print will require some amount of cleaning and curing once printing is complete; the exact method will depend on the type of resin you’re using, but one of the more common chemicals used to clean SLA prints is isopropyl alcohol.</p>
+            <p>Layer lines can be reduced in several ways, including by printing at a higher resolution or (in the case of FDM) using a smaller nozzle. They can also be reduced or removed after printing by coating the print in another material, sanding or dremeling, etc.</p>
+            <p>Resin prints tend to be better for smaller items with fine details – the print texture is usually fairly smooth with minimal print lines. On the downside, they tend to be less durable than FDM prints when it comes to direct forces from falling or being dropped onto a hard surface.</p>
+            <p>If you’re trying to print a model that has particularly thin areas using an SLA printer, it may be a good idea to adjust those parts of the model accordingly. Being able to distinguish what is and isn’t too thin is a matter of experience and learning what your printer’s particular tolerances; every printer is a little different, and what one printer produces flawlessly, another might not be able to manage at all.</p>
+            <p>Ultimately, when selecting a printing method to use, it's best to carefully consider the strengths and limitations of your options. Printing something big that needs to be durable? FDM is probably your best bet. Printing something small with fine details? SLA will likely give you the results you want.</p>
+            <p>If you’re looking to get a printer yourself, bear in mind that any 3D printer is going to involve some amount of safety considerations and upkeep (regular calibration, replacement parts, etc.). 3D printers can produce incredible things, but they are not toys, they are pieces of equipment that – if mishandled – can potentially cause injuries or damage. Make sure to do your research thoroughly before you buy; if a price seems too good to be true, then it probably is.</p>
+            <p>FDM printers are significantly cheaper than SLA printers, and usually involve less-hazardous materials with more color options. However, the plastic filament needs to be heated to a very high temperature (usually between 200 and 300 degrees) in order to be printed, and certain types of plastic (such as ABS) will require a specialized fume containment and removal method in order to be printed safely.</p>
+            <p>SLA printers can produce very accurate, high-detail prints. That being said, SLA printers use liquid resin, which is often not safe for direct skin contact and can be difficult to clean up if it gets outside the printing area. Additionally, the laser or LED array used in the printer is often very powerful and needs to be used with caution and the appropriate eye protection.</p>
+            <p>A special note on printing sockets and ball joints: although both printing methods are technically capable of making these shapes, neither of these technologies are yet at the point where they can produce ball sockets at the level of quality you might be accustomed to. Tolerances can be very difficult for sockets, and you may need to adjust the models accordingly to get something that works on your printer. FDM ball joints and sockets tend to feel very “rough” or “bumpy” when moved, mainly due to the layer lines. SLA sockets are somewhat delicate and may break or even shatter if exposed to excessive force.</p>
+            <p>Speaking of tolerances, axles and pins will oftentimes need to be adjusted in small increments in order to get the resulting fit right on your machine. Too big and they won’t be able to fit into other parts; too small and the connection will be loose or nonexistant.</p>
+            <p>It can be a frustrating process to get tolerances dialed in – often involving making very small changes and lots of test prints – but don’t give up! Odds are, by the end of it you’ll have learned a lot about what your printer is capable of, which in turn will make you better-equipped to adjust it as needed in the future.</p>
+            <p>If you’d prefer not to buy a 3D printer, there are various printing services available both online and offline. Some areas have dedicated makerspaces (groups that make various types of equipment such as printers, vinyl cutters, laser cutters, etc. available to the wider community), which may exist independently or in conjunction with a local library, college campus, or other utilities. Additionally, online services like Shapeways can print and ship models directly to you.</p>
+            <p>That being said, both of these options charge fees for these services (to cover time spent, cost of materials, upkeep, and if applicable, shipping). For a small batch of prints, a local printer or service might suffice, but if you get into large or particularly complicated prints, you’ll likely hit a point where you’d be better off buying a printer of your own.</p>
+            <!-- Resin Stuff -->
+            <h1 id="ResinGuide">Resin Casting Guide</h1>
+            <p>Coming soon!</p>
+            <h2 id="ResinColorGuide">Resin Color Matching Guide</h2>
+            <p>Coming soon!</p>
+        </article>
     </main>
 </body>
 </html>

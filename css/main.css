@@ -5,6 +5,12 @@
     --smalloutershadow: 1px 1px 2px var(--back1);
 }
 
+
+/*********
+ * FONTS *
+ *********/
+
+
 @font-face {
     font-family: 'TradeMarker';
     src: url('../../fonts/TradeMarker-Bold.woff2') format('woff2'), url('../../fonts/TradeMarker-Bold.woff') format('woff');
@@ -15,6 +21,16 @@
     font-family: 'Gill Sans Std';
     src: url('../../fonts/GillSansStd-Light.woff2') format('woff2'), url('../../fonts/GillSansStd-Light.woff') format('woff');
 }
+
+
+.trademarker {
+    font-family: 'TradeMarker';
+}
+
+
+/*************
+ * END FONTS *
+ *************/
 
 
 /********
@@ -55,15 +71,15 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 2em;
     width: 100%;
     min-height: 32px;
 }
 
 nav button {
     font-family: 'TradeMarker';
-    width: 25%;
-    font-size: 1em;
+    font-size: 1.5em;
     letter-spacing: 0.25em;
     text-transform: uppercase;
     background-color: rgba(0, 0, 0, 0);
@@ -73,15 +89,61 @@ nav button {
 }
 
 nav button:hover {
+    filter: brightness(.75);
     cursor: pointer;
-    font-size: 1.125em;
 }
 
 main {
-    margin: auto;
-    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 1em auto;
+    max-width: 90vw;
     transition: all 0.1s ease-in-out;
 }
+
+
+/***************
+ * ASIDE MENUS *
+ ***************/
+
+
+main aside {
+    min-width: 22.5%;
+    min-height: 0%;
+}
+
+
+main aside p {
+    font-size: .9375em;
+    margin: .5em;
+}
+
+
+main aside p a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+
+main aside p.levelone {
+    margin-left: 2em;
+    font-size: .875em;
+}
+
+
+/*******************
+ * END ASIDE MENUS *
+ *******************/
+
+
+main article {
+    margin: auto;
+    max-width: 72.5%;
+}
+
 
 main blockquote p {
     margin: 2em 2em;
@@ -103,10 +165,16 @@ main h1 {
     letter-spacing: 0.25em;
     text-transform: uppercase;
     color: white;
-    margin: 1em;
-    margin-top: 2em;
+    margin: .5em;
+    margin-top: 1em;
     text-align: center;
 }
+
+
+main h1:first-of-type {
+    margin-top: 0em;
+}
+
 
 main h2 {
     font-size: 1.375em;
@@ -149,16 +217,42 @@ main button {
 }
 
 main button:hover {
-    transform: scale(1.0625);
+    transform: scale(1.03125);
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 main button:active {
-    transform: scale(0.9875);
-    background-color: rgba(255, 255, 255, 0.0625);
+    transform: scale(0.96875);
+    background-color: rgba(255, 255, 255, 0.03125);
     box-shadow: var(--smalloutershadow);
 }
 
 .active {
     display: block;
+}
+
+
+section.sets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+section.sets button {
+    margin: .5em;
+    max-width: 25%;
+    padding: .25em;
+}
+
+
+section.sets button img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+section.sets button h3 {
+    margin: 0em;
+    font-size: medium;
 }
