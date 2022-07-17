@@ -1,11 +1,3 @@
-:root {
-    --back1: #010203;
-    /* drop shadow */
-    --outershadow: 2px 2px 4px var(--back1);
-    --smalloutershadow: 1px 1px 2px var(--back1);
-}
-
-
 /*********
  * FONTS *
  *********/
@@ -20,6 +12,12 @@
 @font-face {
     font-family: 'Gill Sans Std';
     src: url('../../fonts/GillSansStd-Light.woff2') format('woff2'), url('../../fonts/GillSansStd-Light.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Bank Gothic';
+    src: url('../../fonts/bankgotm.woff2') format('woff2'), url('../../fonts/bankgotm.woff') format('woff');
 }
 
 
@@ -61,8 +59,17 @@ header img {
 }
 
 
+html {
+    min-height: 100vh;
+}
+
+
 body {
-    background-color: #030b13;
+    min-height: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(3, 11, 19, 1) 0%, rgba(3, 11, 19, .75) 100%),
+        url("/img/metal.png");
+    background-size: cover;
     color: white;
     font-family: 'Gill Sans Std';
     display: flex;
@@ -255,4 +262,34 @@ section.sets button img {
 section.sets button h3 {
     margin: 0em;
     font-size: medium;
+}
+
+
+nav button {
+    width: 144px;
+    max-width: 144px;
+    position: relative;
+    text-align: center;
+    padding: 0em;
+}
+
+
+nav button img {
+    max-width: 100%;
+}
+
+nav button p {
+    margin: 0em;
+    margin-left: 26.51%;
+    margin-right: 6.03%;
+    width: 67.46%;
+
+
+    font-family: 'Bank Gothic';
+    font-size: .75em;
+    letter-spacing: 0em;
+    position: absolute;
+    color: black;
+    font-weight: bolder;
+    top: calc(50% - .75em);
 }
