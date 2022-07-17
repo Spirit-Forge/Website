@@ -49,8 +49,16 @@
 
 
 header {
-    margin: auto;
+    background-image: url("/img/3d/metal.webp");
+    background-size: cover;
+    margin: -1em auto;
     max-width: 50vw;
+    padding: 1em 2em;
+    padding-top: 2em;
+    border: 1px solid #20495a;
+    border-radius: 0em 0em 1em 1em;
+    border-top: none;
+    box-shadow: inset 0em 0em 1em .5em #20495a;
 }
 
 
@@ -65,11 +73,12 @@ html {
 
 
 body {
+    margin-top: 0em;
     min-height: 100%;
     height: 100%;
-    /* background: linear-gradient(0deg, rgba(3, 11, 19, 1) 0%, rgba(3, 11, 19, .75) 100%),
-        url("/img/metal.png"); */
     background-color: #a7bfc9;
+    background: linear-gradient(90deg, rgba(32,73,90,1) 0%, rgba(32,73,90,0.375) 5%, rgba(32,73,90,0.375) 95%, rgba(32,73,90,1) 100%),
+        url("/img/3d/metal.webp");
     background-size: contain;
     color: #000;
     font-family: 'Gill Sans Std';
@@ -321,3 +330,10 @@ section.titles h1,
 section.titles h2 {
     margin: 0em;
 }
+
+
+@media only screen and (min-width: 1920px) {
+    header {
+        max-width: 33.33vw;
+    }
+  }
