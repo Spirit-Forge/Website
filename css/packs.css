@@ -1,16 +1,23 @@
 .packcard {
-    width: calc(100% - 40px);
-    height: 100px;
+    width: calc(100% - 20px);
+    height: 64px;
     display: flex;
     flex-direction: row;
     cursor: pointer;
     padding: 10px;
     padding-left: 0em;
-    margin-left: 40px;
+    margin-left: 16px;
+
+    background-image: url("/img/3d/metal.webp");
+    background-size: cover;
+    border: 2px solid #20495a;
+    border-radius: 1em;
+    box-shadow: inset 0em 0em 1em .5em #20495a;
 }
 
+
 .packcard img {
-    margin-left: -40px;
+    margin-left: -16px;
     display: inline-block;
     height: auto;
     object-fit: contain;

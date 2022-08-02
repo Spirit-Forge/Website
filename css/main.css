@@ -234,16 +234,19 @@ main button {
     box-shadow: var(--outershadow);
 }
 
+
 main button:hover {
     transform: scale(1.03125);
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
+
 
 main button:active {
     transform: scale(0.96875);
     background-color: rgba(255, 255, 255, 0.03125);
     box-shadow: var(--smalloutershadow);
 }
+
 
 .active {
     display: block;
