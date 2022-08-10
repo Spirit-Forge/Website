@@ -24,12 +24,14 @@
     border-radius: 50%;
 }
 
+
 .packcardtext {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-left: .75em;
 }
+
 
 .packcardtext h2,
 .packcardtext p {
@@ -38,10 +40,30 @@
     margin-left: 0em;
 }
 
+
 .packcardtext h2 {
     font-size: 0.75em;
 }
 
+
 .packcardtext p {
     font-size: .5em;
+}
+
+
+@media only screen and (max-width: 720px) {
+    .packcard {
+        margin: .25em;
+        padding: .125em 0em;
+    }
+
+
+    .packcardtext h2 {
+        font-size: .625em;
+    }
+
+
+    .packcardtext p {
+        font-size: .375em;
+    }
 }
