@@ -51,14 +51,12 @@
             <div class="packs">
                 <h2>Free</h2>
                 <button class="packcard" onclick="window.location.href='https://drive.google.com/drive/u/0/folders/1w5sNVBiVOdqxxxEKrLSLtviT44WtAr0j'">
-                    <img src="/img/voot.png">
                     <div class="packcardtext">
                         <h2>VootCaboot’s Studio Parts</h2>
                         <p>Includes parts from the classic Biopack, as well as additional custom parts.</p>
                     </div>
                 </button>
                 <button class="packcard" onclick="window.location.href='https://kingsidorak.gumroad.com'">
-                    <img src="/img/sido.jpg">
                     <div class="packcardtext">
                         <h2>SidoPak for Studio</h2>
                         <p>This download contains 45 high accuracy models for Studio.</p>
@@ -127,7 +125,7 @@
             <p>Through the power of Studio, the Spirit Forge team has created numerous digital sets for you to download, then build for yourself using the information on our <a href="/build/">build</a> page. Some of these are recreations of unreleased prototype sets, while others are completely original, representing characters that were never given a physical design.</p>
             <h2 id="LostRahi">Summer 2022: The Lost Rahi</h2>
             <section class="sets">
-                <button id="SandTarakava" class="boxset">
+                <button id="SandTarakava" class="boxset" onclick="download('/design/sets/[SF01] Sand Tarakava.zip')">
                     <img src="/img/3d/SandTarakavaCOVER.webp">
                 </button>
             </section>
@@ -138,5 +136,6 @@
     <script src="https://cdn.jsdelivr.net/npm/three@0.122.0/examples/js/controls/OrbitControls.min.js"></script>
     <script src="/js/3d.js"></script>
     -->
+    <script src="/js/main.js"></script>
 </body>
 </html>
